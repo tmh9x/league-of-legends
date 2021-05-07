@@ -1,0 +1,12 @@
+h2 {
+  color: var(--secondary-text-color);
+  text-transform: uppercase;
+}
+
+.championCard {
+  margin: 2em auto;
+  padding: 1em;
+  width: 70%;
+  border-radius: 3em;
+  background-color: var(--secondary-bg-color);
+}
