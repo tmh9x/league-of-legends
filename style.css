@@ -1,3 +1,22 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-text-color: #fff;
+  --background-color: #0d181c;
+}
+
+body {
+  background: var(--background-color);
+}
+
+h1 {
+  color: var(--primary-text-color);
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
