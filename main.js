@@ -27,10 +27,14 @@ const mainElement = createElement("main", {
           placeholder: "Filter Champion",
           autofocus: true,
           oninput: debounce((event) => {
-            const filter = event.target.value;
-            getChampions(filter).then((champions) => {
-              const championElements = champions
-                // .filter(champion)
+            const filter = event.target.value.toLowerCase();
+            getChampions().then((champions) => {
+              console.log(champions);
+              championSection.innerText = "";
+              const championElements = Object.values(champions)
+                .filter((champion) =>
+                  champion.id.toLowerCase().startsWith(filter)
+                )
                 .map(createChampionElement);
               championSection.append(...championElements);
             });

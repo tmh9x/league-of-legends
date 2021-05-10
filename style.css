@@ -13,9 +13,6 @@
 
 body {
   background: var(--primary-bg-color);
-
-  /* display: grid;
-  grid-template-columns: 1fr 1fr; */
 }
 
 h1 {
@@ -30,6 +27,11 @@ h1 {
 p {
   color: var(--secondary-text-color);
 }
+
+/* header {
+  display: grid;
+  grid-template-columns: 1fr;
+} */
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
